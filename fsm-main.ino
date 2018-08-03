@@ -78,7 +78,7 @@ void setup() {
   else Serial1.println(F("YKTSAT2: TMPD1_INIT OK"));
   sensors.setResolution(insideThermometer, 9); //Setting measurment resolution (9 bit is default)
   sensors.setResolution(outsideThermometer, 9);
-  activeState = 1; //Initiating DEPLOYED->UNSTABLE transition
+  activeState = 1; //Initiating DEPLOYED-UNSTABLE transition
   Serial1.print(F("YKTSAT2: INIT_DONE\n"));
   
   delay(200);
